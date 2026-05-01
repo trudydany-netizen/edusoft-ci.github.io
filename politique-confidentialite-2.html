@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Politique de Confidentialité — Chants École</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Source+Serif+4:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bleu: #1a3a6b;
+      --bleu-clair: #2d5fa8;
+      --or: #c8a84b;
+      --fond: #f7f4ef;
+      --texte: #2a2a2a;
+      --gris: #6b6b6b;
+      --ligne: #e0d8cc;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Source Serif 4', Georgia, serif;
+      background-color: var(--fond);
+      color: var(--texte);
+      line-height: 1.8;
+    }
+
+    /* Header */
+    header {
+      background: var(--bleu);
+      color: white;
+      padding: 60px 40px 50px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    header::before {
+      content: '🎵';
+      position: absolute;
+      font-size: 200px;
+      opacity: 0.05;
+      top: -30px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .badge {
+      display: inline-block;
+      background: var(--or);
+      color: var(--bleu);
+      font-family: 'Playfair Display', serif;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      padding: 6px 18px;
+      border-radius: 2px;
+      margin-bottom: 20px;
+    }
+
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(28px, 5vw, 48px);
+      font-weight: 700;
+      letter-spacing: -0.5px;
+      margin-bottom: 12px;
+    }
+
+    header p {
+      font-size: 14px;
+      opacity: 0.7;
+      font-style: italic;
+      letter-spacing: 0.5px;
+    }
+
+    .ornement {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+      margin-top: 30px;
+      opacity: 0.4;
+    }
+    .ornement span { height: 1px; width: 80px; background: var(--or); display: block; }
+    .ornement i { color: var(--or); font-style: normal; font-size: 18px; }
+
+    /* Main */
+    main {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 60px 30px 80px;
+    }
+
+    .intro-box {
+      background: white;
+      border-left: 4px solid var(--or);
+      padding: 24px 28px;
+      margin-bottom: 50px;
+      border-radius: 0 6px 6px 0;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    }
+
+    .intro-box p {
+      font-size: 15px;
+      color: var(--gris);
+      font-style: italic;
+    }
+
+    section {
+      margin-bottom: 44px;
+      padding-bottom: 44px;
+      border-bottom: 1px solid var(--ligne);
+    }
+
+    section:last-of-type {
+      border-bottom: none;
+    }
+
+    .section-num {
+      font-family: 'Playfair Display', serif;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--or);
+      margin-bottom: 8px;
+    }
+
+    h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 22px;
+      font-weight: 700;
+      color: var(--bleu);
+      margin-bottom: 16px;
+      line-height: 1.3;
+    }
+
+    p {
+      font-size: 15.5px;
+      color: #3a3a3a;
+      margin-bottom: 12px;
+    }
+
+    ul {
+      list-style: none;
+      margin: 12px 0;
+    }
+
+    ul li {
+      padding: 6px 0 6px 24px;
+      position: relative;
+      font-size: 15px;
+      color: #3a3a3a;
+    }
+
+    ul li::before {
+      content: '♩';
+      position: absolute;
+      left: 0;
+      color: var(--or);
+      font-size: 13px;
+    }
+
+    .highlight {
+      background: #eef2f9;
+      border-radius: 6px;
+      padding: 16px 20px;
+      margin: 16px 0;
+      font-size: 15px;
+      color: var(--bleu);
+    }
+
+    /* Contact box */
+    .contact-box {
+      background: var(--bleu);
+      color: white;
+      border-radius: 10px;
+      padding: 32px 36px;
+      margin-top: 50px;
+      text-align: center;
+    }
+
+    .contact-box h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 22px;
+      margin-bottom: 12px;
+    }
+
+    .contact-box p { color: rgba(255,255,255,0.8); margin-bottom: 6px; font-size: 14px; }
+
+    .contact-box a {
+      color: var(--or);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 30px;
+      font-size: 12px;
+      color: var(--gris);
+      border-top: 1px solid var(--ligne);
+      letter-spacing: 0.5px;
+    }
+
+    footer strong { color: var(--bleu); }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="badge">EduSoft-ci</div>
+  <h1>Politique de Confidentialité</h1>
+  <p>Application Chants École — Côte d'Ivoire</p>
+  <div class="ornement">
+    <span></span>
+    <i>🎶</i>
+    <span></span>
+  </div>
+</header>
+
+<main>
+
+  <div class="intro-box">
+    <p>La présente politique de confidentialité décrit comment l'application <strong>Chants École</strong>, développée par <strong>EduSoft-ci</strong>, collecte, utilise et protège les informations des utilisateurs. Nous nous engageons à respecter la vie privée de tous nos utilisateurs, en particulier les enfants.</p>
+  </div>
+
+  <section>
+    <div class="section-num">Article 01</div>
+    <h2>Informations collectées</h2>
+    <p>L'application Chants École est conçue pour être utilisée sans création de compte. Nous collectons un minimum d'informations :</p>
+    <ul>
+      <li>Authentification anonyme via Firebase (aucune donnée personnelle requise)</li>
+      <li>Favoris enregistrés localement sur votre appareil</li>
+      <li>Données d'utilisation anonymes pour améliorer l'application</li>
+    </ul>
+    <div class="highlight">
+      ✅ Chants École ne collecte pas de nom, prénom, adresse e-mail, numéro de téléphone ni aucune information personnelle identifiable.
+    </div>
+  </section>
+
+  <section>
+    <div class="section-num">Article 02</div>
+    <h2>Utilisation des données</h2>
+    <p>Les données collectées sont utilisées uniquement pour :</p>
+    <ul>
+      <li>Permettre le fonctionnement de l'application (lecture des chants, favoris)</li>
+      <li>Améliorer les performances et l'expérience utilisateur</li>
+      <li>Corriger les erreurs techniques</li>
+    </ul>
+    <p>Nous ne vendons, ne louons et ne partageons aucune donnée avec des tiers à des fins commerciales.</p>
+  </section>
+
+  <section>
+    <div class="section-num">Article 03</div>
+    <h2>Protection des enfants</h2>
+    <p>Chants École est destiné aux élèves de l'école primaire. Conformément aux lois sur la protection des mineurs :</p>
+    <ul>
+      <li>Aucune donnée personnelle d'enfant n'est collectée</li>
+      <li>Aucun compte utilisateur n'est requis</li>
+      <li>Aucune publicité ciblée n'est diffusée aux enfants</li>
+      <li>L'application ne contient pas de contenu inapproprié</li>
+    </ul>
+  </section>
+
+  <section>
+    <div class="section-num">Article 04</div>
+    <h2>Services tiers utilisés</h2>
+    <p>L'application utilise les services suivants, soumis à leurs propres politiques de confidentialité :</p>
+    <ul>
+      <li><strong>Google Firebase</strong> — Hébergement des données et authentification anonyme</li>
+      <li><strong>Firebase Storage</strong> — Stockage des fichiers audio des chants</li>
+      <li><strong>Google Analytics for Firebase</strong> — Statistiques d'utilisation anonymes</li>
+    </ul>
+  </section>
+
+  <section>
+    <div class="section-num">Article 05</div>
+    <h2>Sécurité des données</h2>
+    <p>Nous mettons en œuvre des mesures de sécurité appropriées pour protéger les données contre tout accès non autorisé, modification, divulgation ou destruction. Les règles de sécurité Firebase sont configurées pour restreindre l'accès aux données.</p>
+  </section>
+
+  <section>
+    <div class="section-num">Article 06</div>
+    <h2>Modifications de cette politique</h2>
+    <p>Cette politique de confidentialité peut être mise à jour périodiquement. Toute modification sera publiée sur cette page avec la date de mise à jour. Nous vous encourageons à consulter régulièrement cette page.</p>
+    <p><strong>Date de dernière mise à jour :</strong> 1er mai 2026</p>
+  </section>
+
+  <div class="contact-box">
+    <h3>Nous contacter</h3>
+    <p>Pour toute question concernant cette politique de confidentialité :</p>
+    <p>📧 <a href="mailto:edusoft.ci@gmail.com">edusoft.ci@gmail.com</a></p>
+    <p style="margin-top:10px;">Développeur : <strong style="color:white;">EduSoft-ci</strong> — Côte d'Ivoire 🇨🇮</p>
+  </div>
+
+</main>
+
+<footer>
+  <p>&copy; 2026 <strong>EduSoft-ci</strong> — Tous droits réservés &nbsp;|&nbsp; Application <strong>Chants École</strong></p>
+</footer>
+
+</body>
+</html>
